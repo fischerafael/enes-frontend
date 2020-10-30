@@ -1,5 +1,5 @@
 import React from 'react'
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -36,9 +36,8 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <html>
-                <Head>
-                    <title>Esse não é santo</title>
+            <Html>
+                <Head>                    
                     <meta />
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Anton&display=swap" 
@@ -53,7 +52,7 @@ export default class MyDocument extends Document {
                     <Main />
                     <NextScript />
                 </body>
-            </html>
+            </Html>
         )
     }    
 }
